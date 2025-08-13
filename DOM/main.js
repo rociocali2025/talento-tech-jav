@@ -7,7 +7,7 @@ const spiderman =(peligro)=>{
     if (peligro == true){
         return `como decia el ${v1} ${v2} ${v3}`;
     }else{
-        retur `como decia el ${v1} ${v4}`;
+        return `como decia el ${v1} ${v4}`;
     }
 };
  
@@ -16,25 +16,27 @@ const titulo = documento.createElement("h1");
 titulo.textContent ="hola me llamo spiderman"
 document.body.appendChild(titulo);
 
-// crear un boton javas
+// crear botones
 const boton= document.createElement("button");
 const boton2= document.createElement("button");
 
-boton,innertext="peligro";
-boton2,innertext="No peligro";
+boton.innertext="peligro";
+boton2.innertext="No peligro";
 
-// mandar pagina
-document.bodydy.appendChild(boton);
-document.bodydy.appendChild(boton2);
+// Añadir botones a la pagina
+document.body.appendChild(boton);
+document.body.appendChild(boton2);
 
 
-// hacer m
+// Eventos
 boton.addEventListener("click",()=>{
-    peligro= false;
-    recordando= spiderman(peligro);
+    const peligro= true;
+    const recordando= spiderman(peligro);
     windows.location.href="index.html";
     document.body.innerHTML=`<h1>${recordando}</h1>
-    <button id ='boton2'><a hrf='index.html'>volver</a>/button>`;
+    <button id ='boton2'><a href='index.html'>volver</a></button>`;
+    
+    boton2,addEventListener
 
 })
 
